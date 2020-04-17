@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JavaScript Quiz</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>Unix / Linux Quiz</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">1. What command creates a new directory?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">2. What command is used to delete files?</p>
+<input type = "radio" id = "mc" name = "question2" value = "rm"> rm<br>
+<input type = "radio" id = "mc" name = "question2" value = "rf"> rf<br>
+
+<p class = "questions">3. What command is used to delete directories that are not empty?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "rmdir"> rmdir<br>
+<input type = "radio" id = "mc" name = "question3" value = "rm -rf"> rm -rf<br>
+
+<p class = "questions">4. Which command is used to copy directories including files and subdirectories?</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "cp -r"> cp -r<br>
+<input type = "radio" id = "mc" name = "question4" value = "cp"> cp<br>
+<input type = "radio" id = "mc" name = "question4" value = "cp -rf"> cp -rf<br>
+
+<p class = "questions">5. Which command creates a new file, or updates stats on an existing file?</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "file"> file<br>
+<input type = "radio" id = "mc" name = "question5" value = "touch"> touch<br>
+<input type = "radio" id = "mc" name = "question5" value = "touch file"> touch file<br>
+
+<p class = "questions">6. Software written for one UNIX system will often run on other systems with little or no modification</p>
+
+<input type = "radio" id = "mc" name = "question6" value = "true"> true<br>
+<input type = "radio" id = "mc" name = "question6" value = "false"> false<br>
+
+<p class = "questions">7. What command is used to change a password?</p>
+
+<input type = "radio" id = "mc" name = "question7" value = "pw"> pw<br>
+<input type = "radio" id = "mc" name = "question7" value = "password"> password<br>
+<input type = "radio" id = "mc" name = "question7" value = "passwd"> passwd<br>
+
+<p class = "questions">8. Which commands give information about users logged on to system?</p>
+
+<input type = "radio" id = "mc" name = "question8" value = "who"> who<br>
+<input type = "radio" id = "mc" name = "question8" value = "w"> w<br>
+<input type = "radio" id = "mc" name = "question8" value = "both"> both<br>
+
+<p class = "questions">9. Which command will quit?</p>
+
+<input type = "radio" id = "mc" name = "question9" value = "quit"> quit<br>
+<input type = "radio" id = "mc" name = "question9" value = "q"> q<br>
+<input type = "radio" id = "mc" name = "question9" value = "qt"> qt<br>
+
+<p class = "questions">10. Which command will find files matching specified characteristics?</p>
+
+<input id = "textbox" type = "text" name = "question10">
+
+
+<input id = "button" type = "button" value = "Submit" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "number_wrong"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>
+
+
+
